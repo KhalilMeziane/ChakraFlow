@@ -1,5 +1,6 @@
-import { Head } from "@components/index"
+import { Head } from '@components/index'
 import { BrandName } from '@src/constants'
+import { Navbar, Header } from './components'
 
 export default function Home () {
     return (
@@ -7,8 +8,10 @@ export default function Home () {
             <Head>
                 <title>Home | {BrandName}</title>
             </Head>
+            <Navbar />
+            <Header />
             <main>
-                Home
+                {/* Home */}
             </main>
         </>
     )
