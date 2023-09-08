@@ -1,6 +1,6 @@
 import { Head } from '@components/index'
 import { BrandName } from '@src/constants'
-import { Navbar, Header } from './components'
+import { Navbar, Header, Features } from './components'
 
 export default function Home () {
     return (
@@ -11,7 +11,7 @@ export default function Home () {
             <Navbar />
             <Header />
             <main>
-                {/* Home */}
+                <Features />
             </main>
         </>
     )
