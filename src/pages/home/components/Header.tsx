@@ -9,7 +9,7 @@ export default function Header () {
                 <VStack mx="auto" justify="center" align="center" w={{ base: '100%', md: '80%', lg: '70%', xl: '80%' }}>
                     <Box fontWeight="medium" bg="white" color="blue.500" px='6' py="2" rounded="full">Open Source, and Free</Box>
                     <Heading as="h1" textAlign="center" size="2xl" py="3">The Ultimate Chakra UI Dashboard Template and Toolkit"</Heading>
-                    <Text textAlign="center" fontSize="lg">Your Chakra UI-powered dashboard solution. Packed with features like responsive design, dashboard elements, pages, UI components, and dynamic charts, ChakraFlow simplifies backend development. It's available for free with a Pro version for added flexibility.</Text>
+                    <Text textAlign="center" fontSize="lg">Your Chakra UI-powered dashboard solution. Packed with features like responsive design, dashboard elements, pages, UI components, and dynamic charts, ChakraFlow simplifies backend development. It's available for free and For developers of all levels.</Text>
                     <HStack spacing="4" pt='5'>
                         <Image w='10' h="10" src={ChakraUiIcon} alt='chakra-ui logo'  />
                         <Image w='10' h="10" src={ReactIcon} alt='reactjs logo'  />
