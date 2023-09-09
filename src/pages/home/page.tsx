@@ -1,6 +1,6 @@
 import { Head } from '@components/index'
 import { BrandName } from '@src/constants'
-import { Navbar, Header, Features, Footer } from './components'
+import { Navbar, Header, Features, AuthPages, Footer } from './components'
 
 export default function Home () {
     return (
@@ -12,6 +12,7 @@ export default function Home () {
             <Header />
             <main>
                 <Features />
+                <AuthPages />
             </main>
             <Footer />
         </>
