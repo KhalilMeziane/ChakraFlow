@@ -29,7 +29,7 @@ export default function Features () {
             <Container maxW="7xl">
                 <Heading as="h2" textAlign="center">Features</Heading>
                 <Text textAlign="center" w={{ base: '100%',  md: '80%', lg: '70%', xl: '60%' }} mx="auto">ChakraFlow brings you all the essential UI components and features you'd expect from a comprehensive UI library, ready to kickstart your Chakra UI web project with style and functionality.</Text>
-                <Grid templateColumns='repeat(3, 1fr)' gap={3} py='8'>
+                <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }} gap={3} py='8'>
                     {
                         featuresContent.map(feature => {
                             return (
