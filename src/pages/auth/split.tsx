@@ -3,11 +3,11 @@ import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, 
 import { Head } from '@components/index'
 import { BrandName } from '@src/constants'
 
-export default function LoginSplit () {
+export default function Split () {
   return (
     <>
         <Head>
-            <title>Login-Split | {BrandName}</title>
+            <title>Auth-Split | {BrandName}</title>
         </Head>
         <Flex minH="100vh" bg='gray.100' as="main">
             <Box

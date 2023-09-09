@@ -3,11 +3,11 @@ import { Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStac
 import { Head } from '@components/index'
 import { BrandName } from '@src/constants'
 
-export default function LoginSimple () {
+export default function Simple () {
     return (
         <>
             <Head>
-                <title>Login-Simple | {BrandName}</title>
+                <title>Auth-Simple | {BrandName}</title>
             </Head>
             <Flex minH="100vh" align="center" bg='gray.100'>
                 <VStack 

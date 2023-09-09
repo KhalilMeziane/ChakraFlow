@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from '@pages/home/page'
-import LoginSimple from '@src/pages/auth/LoginSimple'
-import LoginSplit from '@src/pages/auth/LoginSplit'
+import LoginSimple from '@src/pages/auth/simple'
+import LoginSplit from '@src/pages/auth/split'
 
 const router = createBrowserRouter([
     {
@@ -10,11 +10,11 @@ const router = createBrowserRouter([
         element: <Home />
     },
     {
-        path: '/auth/login-simple',
+        path: '/auth/simple',
         element: <LoginSimple />
     },
     {
-        path: '/auth/login-split',
+        path: '/auth/split',
         element: <LoginSplit />
     }
 ])
