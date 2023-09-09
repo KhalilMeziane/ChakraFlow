@@ -9,32 +9,32 @@ interface PageTypes {
 const pagesContent: Array<PageTypes> = [
     {
         title: 'Sign in Simple',
-        imageSrc: '/public/thumbnails/auth-simple.png',
+        imageSrc: '/thumbnails/auth-simple.png',
         href: '/auth/simple'
     },
     {
         title: 'Sign in Bold',
-        imageSrc: '/public/thumbnails/auth-bold.png',
+        imageSrc: '/thumbnails/auth-bold.png',
         href: '/auth/bold'
     },
     {
         title: 'Sign in Cover',
-        imageSrc: '/public/thumbnails/auth-cover.png',
+        imageSrc: '/thumbnails/auth-cover.png',
         href: '/auth/cover'
     },
     {
         title: 'Sign in Image',
-        imageSrc: '/public/thumbnails/auth-image.png',
+        imageSrc: '/thumbnails/auth-image.png',
         href: '/auth/image'
     },
     {
         title: 'Sign in Plain',
-        imageSrc: '/public/thumbnails/auth-plain.png',
+        imageSrc: '/thumbnails/auth-plain.png',
         href: '/auth/plain'
     },
     {
         title: 'Sign in Sidebar',
-        imageSrc: '/public/thumbnails/auth-sidebar.png',
+        imageSrc: '/thumbnails/auth-sidebar.png',
         href: '/auth/sidebar'
     }
 ]
