@@ -6,6 +6,7 @@ import AuthCover from '@src/pages/auth/cover'
 import AuthBold from '@pages/auth/bold'
 import AuthPlain from '@pages/auth/plain'
 import AuthImage from '@pages/auth/image'
+import AuthColumn from '@pages/auth/column'
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     {
         path: '/auth/image',
         element: <AuthImage />
+    },
+    {
+        path: '/auth/column',
+        element: <AuthColumn />
     }
 ])
 
