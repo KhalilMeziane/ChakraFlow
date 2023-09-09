@@ -7,7 +7,7 @@ export default function Split () {
   return (
     <>
         <Head>
-            <title>Auth-Split | {BrandName}</title>
+            <title>Auth Split | {BrandName}</title>
         </Head>
         <Flex minH="100vh" bg='gray.100' as="main">
             <Box
