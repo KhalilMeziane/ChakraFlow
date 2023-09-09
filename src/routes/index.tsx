@@ -7,6 +7,7 @@ import AuthBold from '@pages/auth/bold'
 import AuthPlain from '@pages/auth/plain'
 import AuthImage from '@pages/auth/image'
 import AuthColumn from '@pages/auth/column'
+import AuthSidebar from '@pages/auth/sidebar'
 
 const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     {
         path: '/auth/column',
         element: <AuthColumn />
+    },
+    {
+        path: '/auth/sidebar',
+        element: <AuthSidebar />
     }
 ])
 
