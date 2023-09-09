@@ -1,13 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from '@pages/home/page'
-import AuthSimple from '@pages/auth/simple'
-import AuthCover from '@src/pages/auth/cover'
-import AuthBold from '@pages/auth/bold'
-import AuthPlain from '@pages/auth/plain'
-import AuthImage from '@pages/auth/image'
-import AuthColumn from '@pages/auth/column'
-import AuthSidebar from '@pages/auth/sidebar'
+import { AuthBold, AuthColumn, AuthCover, AuthImage, AuthPlain, AuthSidebar, AuthSimple } from '@pages/auth'
 
 const router = createBrowserRouter([
     {
