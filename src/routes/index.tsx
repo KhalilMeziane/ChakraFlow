@@ -4,6 +4,7 @@ import Home from '@pages/home/page'
 import AuthSimple from '@pages/auth/simple'
 import AuthSplit from '@pages/auth/split'
 import AuthBold from '@pages/auth/bold'
+import AuthPlain from '@pages/auth/plain'
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
     {
         path: '/auth/bold',
         element: <AuthBold />
+    },
+    {
+        path: '/auth/plain',
+        element: <AuthPlain />
     }
 ])
 
