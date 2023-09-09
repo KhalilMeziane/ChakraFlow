@@ -11,7 +11,8 @@ export default function Split () {
         </Head>
         <Flex minH="100vh" bg='gray.100' as="main">
             <Box
-                w='50%' 
+                w='50%'
+                display={{ base: 'none', lg: 'block' }} 
                 bgSize="cover"
                 bgPos="center"
                 position="relative"
@@ -21,7 +22,7 @@ export default function Split () {
             >
                 <Box bg="gray.900" opacity="0.6" position="absolute" top="0" left="0" w='100%' h="100%"></Box>
             </Box>
-            <Box w='50%' bg="white" minH="100vh" p='16'>
+            <Box w={{ base: '100%', lg: '50%' }} bg="white" minH="100vh" p='16'>
                 <VStack align="center" spacing="5" justify="center" h="100%" alignItems="stretch">
                     <Heading as='h1' fontSize="3xl" textAlign="center">Sign in to {BrandName}</Heading>
                     <VStack spacing="4" as="form">
