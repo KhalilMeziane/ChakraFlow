@@ -5,6 +5,7 @@ import AuthSimple from '@pages/auth/simple'
 import AuthSplit from '@pages/auth/split'
 import AuthBold from '@pages/auth/bold'
 import AuthPlain from '@pages/auth/plain'
+import AuthImage from '@pages/auth/image'
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     {
         path: '/auth/plain',
         element: <AuthPlain />
+    },
+    {
+        path: '/auth/image',
+        element: <AuthImage />
     }
 ])
 
