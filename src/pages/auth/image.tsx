@@ -35,7 +35,7 @@ export default function Image () {
                     </VStack>
                     <Text mt='3' fontWeight="medium" textAlign="center">
                         Don't have an account? {' '}
-                        <Link color="blue.400">Register here</Link>
+                        <Link color="blue.400">Register</Link>
                     </Text>
                 </VStack>
             </Box>

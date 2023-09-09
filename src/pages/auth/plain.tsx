@@ -31,7 +31,7 @@ export default function Plain () {
                     </VStack>
                     <Text fontWeight="medium">
                         Don't have an account? {' '}
-                        <Link color="blue.400">Register here</Link>
+                        <Link color="blue.400">Register</Link>
                     </Text>
                 </VStack>
             </Flex>
