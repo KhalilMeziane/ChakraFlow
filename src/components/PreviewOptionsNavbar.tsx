@@ -10,9 +10,6 @@ export default function PreviewOptionsNavbar() {
             bg='black'
             color={useColorModeValue('gray.600', 'white')}
             py="2"
-            pos="fixed"
-            top="0"
-            left="0"
             w="100%"  
             zIndex={999}          
         >
