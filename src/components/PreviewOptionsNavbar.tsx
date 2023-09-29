@@ -1,4 +1,5 @@
-import { Box, Container, Flex, Stack, Text, useColorModeValue } from "@chakra-ui/react"
+import { Box, Container, Flex, Stack, Link, useColorModeValue } from "@chakra-ui/react"
+import { Link as LinkRouter } from 'react-router-dom'
 
 import { BrandName } from "@src/constants"
 import { ThemeToggle } from "."
@@ -16,14 +17,15 @@ export default function PreviewOptionsNavbar() {
             <Container maxW='7xl'>
                 <Flex align={'center'}>
                     <Flex flex={{ base: 1 }}>
-                        <Text
-                            fontFamily={'heading'}
+                        <Link
+                            as={LinkRouter}
+                            to="/"
                             fontSize="xl"
                             fontWeight="medium"
                             color="white"
                         >
                             {BrandName}
-                        </Text>
+                        </Link>
                     </Flex>
 
                     <Stack
