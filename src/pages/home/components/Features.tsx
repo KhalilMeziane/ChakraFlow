@@ -20,6 +20,10 @@ const featuresContent: Array<FeaturesContentTypes> = [
     {
         title: 'ReactJs',
         content: 'ChakraFlow offers a tailored solution, incorporating popular libraries to fortify your React applications, ensuring a strong and dependable foundation.'
+    },
+    {
+        title: 'Dark Mode',
+        content: 'Enjoy a sleek and energy-efficient dark mode for an improved user experience in low-light environments.'
     }
 ]
 
