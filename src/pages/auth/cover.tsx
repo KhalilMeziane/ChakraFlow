@@ -1,6 +1,6 @@
-import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, useColorModeValue } from '@chakra-ui/react'
 
-import { Head } from '@components/index'
+import { Head, PreviewOptionsNavbar } from '@components/index'
 import { BrandName } from '@src/constants'
 
 export default function Cover () {
@@ -9,7 +9,8 @@ export default function Cover () {
         <Head>
             <title>Auth Cover | {BrandName}</title>
         </Head>
-        <Flex minH="100vh" bg='gray.100' as="main">
+        <PreviewOptionsNavbar />
+        <Flex minH="100vh" bg={useColorModeValue('white', 'gray.800')} as="main">
             <Box
                 w='65%'
                 display={{ base: 'none', lg: 'block' }} 
@@ -22,7 +23,7 @@ export default function Cover () {
             >
                 <Box bg="gray.900" opacity="0.6" position="absolute" top="0" left="0" w='100%' h="100%"></Box>
             </Box>
-            <Box w={{ base: '100%', lg: '35%' }} bg="white" minH="100vh" p='8'>
+            <Box w={{ base: '100%', lg: '35%' }} minH="100vh" p='8'>
                 <VStack align="center" spacing="5" justify="center" h="100%" alignItems="stretch">
                     <Heading as='h1' fontSize="3xl" textAlign="center">Sign in to {BrandName}</Heading>
                     <VStack spacing="4" as="form">
@@ -38,7 +39,7 @@ export default function Cover () {
                     </VStack>
                     <Text mt='3' fontWeight="medium" textAlign="center">
                         Don't have an account? {' '}
-                        <Link color="blue.400">Register</Link>
+                        <Link href="#" color="blue.400">Register</Link>
                     </Text>
                 </VStack>
             </Box>

@@ -1,6 +1,6 @@
-import { Avatar, Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack } from '@chakra-ui/react'
+import { Avatar, Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, useColorModeValue } from '@chakra-ui/react'
 
-import { Head } from '@components/index'
+import { Head, PreviewOptionsNavbar } from '@components/index'
 import { BrandName } from '@src/constants'
 
 export default function Sidebar () {
@@ -9,11 +9,12 @@ export default function Sidebar () {
             <Head>
                 <title>Auth Sidebar | {BrandName}</title>
             </Head>
-            <Flex minH="100vh" bg='gray.100' as="main">
+            <PreviewOptionsNavbar />
+            <Flex minH="100vh" bg={useColorModeValue('white', 'gray.900')} as="main">
                 <Box
                     w='30%'
                     display={{ base: 'none', lg: 'block' }} 
-                    bg='blue.500'
+                    bg={useColorModeValue('blue.500', 'blue.900')}
                 >
                     <VStack h='100vh' align="start" justifyContent="space-between" p='6'>
                         <Heading color='white'>{BrandName}</Heading>
@@ -31,7 +32,7 @@ export default function Sidebar () {
                         </VStack>
                     </VStack>
                 </Box>
-                <Box w={{ base: '100%', lg: '70%' }} bg="white" minH="100vh" p='8'>
+                <Box w={{ base: '100%', lg: '70%' }} minH="100vh" p='8'>
                     <VStack align="center" spacing="5" justify="center" h="100%" alignItems="stretch" w={{ base: '100%', md: '80%', lg: '60%', xl: '50%' }} mx='auto'>
                         <Heading as='h1' fontSize="3xl" textAlign="center">Sign in to {BrandName}</Heading>
                         <VStack spacing="4" as="form">

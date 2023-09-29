@@ -1,6 +1,6 @@
 import { Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack } from '@chakra-ui/react'
 
-import { Head } from '@components/index'
+import { Head, PreviewOptionsNavbar } from '@components/index'
 import { BrandName } from '@src/constants'
 
 export default function Plain () {
@@ -9,6 +9,7 @@ export default function Plain () {
             <Head>
                 <title>Auth Plain | {BrandName}</title>
             </Head>
+            <PreviewOptionsNavbar />
             <Flex minH="100vh" align="center">
                 <VStack 
                     w={{ base: '100%', md: '60%', lg: '45%', xl: '35%' }} 
