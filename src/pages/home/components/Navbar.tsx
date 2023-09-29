@@ -24,7 +24,7 @@ export default function Navbar () {
             borderColor={useColorModeValue('gray.200', 'gray.900')}
             
         >
-            <Container as="nav" maxW='7xl'>
+            <Container maxW='7xl'>
                 <Flex align={'center'}>
                     <Flex flex={{ base: 1 }}>
                         <Text
