@@ -1,6 +1,6 @@
-import { Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack } from '@chakra-ui/react'
+import { Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, useColorModeValue } from '@chakra-ui/react'
 
-import { Head } from '@components/index'
+import { Head, PreviewOptionsNavbar } from '@components/index'
 import { BrandName } from '@src/constants'
 
 export default function Simple () {
@@ -9,7 +9,8 @@ export default function Simple () {
             <Head>
                 <title>Auth Simple | {BrandName}</title>
             </Head>
-            <Flex minH="100vh" align="center" bg='gray.100'>
+            <PreviewOptionsNavbar />
+            <Flex minH="100vh" align="center" bg={useColorModeValue("gray.100", "gray.900")}>
                 <VStack 
                     w={{ base: '100%', md: '60%', lg: '45%', xl: '35%' }} 
                     mx='auto'
@@ -17,7 +18,7 @@ export default function Simple () {
                     h="100%"
                     rounded='lg'
                     shadow='sm'
-                    bg='white'
+                    bg={useColorModeValue("white", "gray.800")}
                     spacing="4"
                 >
                     <Heading as='h1' fontSize="3xl">Sign in to {BrandName}</Heading>
