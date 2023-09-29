@@ -8,14 +8,24 @@ interface PageTypes {
 }
 const pagesContent: Array<PageTypes> = [
     {
+        title: 'Sign in Image',
+        imageSrc: '/thumbnails/auth-image.png',
+        href: '/auth/image'
+    },
+    {
         title: 'Sign in Simple',
         imageSrc: '/thumbnails/auth-simple.png',
         href: '/auth/simple'
     },
     {
-        title: 'Sign in Bold',
-        imageSrc: '/thumbnails/auth-bold.png',
-        href: '/auth/bold'
+        title: 'Sign in Column',
+        imageSrc: '/thumbnails/auth-column.png',
+        href: '/auth/column'
+    },
+    {
+        title: 'Sign in Plain',
+        imageSrc: '/thumbnails/auth-plain.png',
+        href: '/auth/plain'
     },
     {
         title: 'Sign in Cover',
@@ -23,14 +33,9 @@ const pagesContent: Array<PageTypes> = [
         href: '/auth/cover'
     },
     {
-        title: 'Sign in Image',
-        imageSrc: '/thumbnails/auth-image.png',
-        href: '/auth/image'
-    },
-    {
-        title: 'Sign in Plain',
-        imageSrc: '/thumbnails/auth-plain.png',
-        href: '/auth/plain'
+        title: 'Sign in Bold',
+        imageSrc: '/thumbnails/auth-bold.png',
+        href: '/auth/bold'
     },
     {
         title: 'Sign in Sidebar',

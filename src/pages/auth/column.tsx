@@ -1,6 +1,6 @@
 import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, Avatar, HStack } from '@chakra-ui/react'
 
-import { Head } from '@components/index'
+import { Head, PreviewOptionsNavbar } from '@components/index'
 import { BrandName } from '@src/constants'
 
 export default function Column () {
@@ -9,19 +9,16 @@ export default function Column () {
             <Head>
                 <title>Auth Column | {BrandName}</title>
             </Head>
+            <PreviewOptionsNavbar />
             <Flex minH="100vh" as="main">
                 <Box
                     w='50%'
                     display={{ base: 'none', lg: 'block' }} 
                     h="100vh"
                     p='8'
-                    bgGradient={[
-                        'linear(to-tr, teal.600, yellow.600)',
-                        'linear(to-t, blue.200, teal.500)',
-                        'linear(to-b, orange.100, purple.300)',
-                    ]}
+                    bgGradient={'linear(to-tr, teal.600, yellow.600)'}
                 >
-                    <VStack align="center" justify="center" h="100%" alignItems="stretch" spacing="3">
+                    <VStack align="center" justify="center" h="100%" alignItems="stretch" spacing="3" color="white">
                         <Heading as='h2' fontSize="3xl">{BrandName}</Heading>
                         <Text fontSize="lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque incidunt voluptatibus consequatur fugit. Reprehenderit numquam est tempora id delectus reiciendis!</Text>
                         <HStack pt='4'>
@@ -33,7 +30,7 @@ export default function Column () {
                         </HStack>
                     </VStack>
                 </Box>
-                <Box w={{ base: '100%', lg: '50%' }} bg="white" minH="100vh" p='16'>
+                <Box w={{ base: '100%', lg: '50%' }} minH="100vh" p='16'>
                     <VStack align="center" spacing="5" justify="center" h="100%" alignItems="stretch">
                         <Heading as='h1' fontSize="3xl" textAlign="center">Sign in to {BrandName}</Heading>
                         <VStack spacing="4" as="form">
