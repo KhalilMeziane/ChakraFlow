@@ -65,8 +65,8 @@ const PageCard = ({ page: { title, imageSrc, href } }: { page: PageTypes } ) => 
         <VStack 
             border="1px" 
             p='1' 
-            bg='white' 
-            borderColor="gray.100" 
+            bg={useColorModeValue('white', 'gray.900')}
+            borderColor={useColorModeValue('gray.100', 'gray.800')} 
             as={Link} 
             to={href} 
             h='full' 
