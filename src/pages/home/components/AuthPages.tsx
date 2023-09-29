@@ -1,4 +1,4 @@
-import { Box, Container, Grid, GridItem, Heading, Image, VStack } from "@chakra-ui/react"
+import { Box, Container, Grid, GridItem, Heading, Image, VStack, useColorModeValue } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 
 interface PageTypes {
@@ -41,7 +41,7 @@ const pagesContent: Array<PageTypes> = [
 
 export default function AuthPages () {
     return (
-        <Box as="section" py="12" bg="gray.50">
+        <Box as="section" py="12" bg={useColorModeValue('gray.50', 'gray.900')}>
             <Container maxW="7xl">
                 <Heading as="h2" textAlign="center">Authentication Pages</Heading>
                 <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }} gap={5} py='8'>

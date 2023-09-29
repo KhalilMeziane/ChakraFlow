@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react'
 
 import { BrandName } from '@src/constants'
+import { ThemeToggle } from '@src/components'
 
 export default function Navbar () {
     return (
@@ -42,6 +43,7 @@ export default function Navbar () {
                         direction={'row'}
                         spacing={6}
                     >
+                        <ThemeToggle />
                         <Button
                             variant="outline"
                             fontSize={'lg'}
