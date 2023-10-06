@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from '@pages/home/page'
 import { AuthBold, AuthColumn, AuthCover, AuthImage, AuthPlain, AuthSidebar, AuthSimple } from '@pages/auth'
+import { FullWidthDoubleStack } from '@pages/layouts'
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
     {
         path: '/auth/sidebar',
         element: <AuthSidebar />
+    },
+    {
+        path: '/layouts/full-width-double-stack',
+        element: <FullWidthDoubleStack />
     }
 ])
 
