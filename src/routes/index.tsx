@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from '@pages/home/page'
 import { AuthBold, AuthColumn, AuthCover, AuthImage, AuthPlain, AuthSidebar, AuthSimple } from '@pages/auth'
-import { FullWidthDoubleStack, ContainerDoubleStack } from '@pages/layouts'
+import { FullWidthDoubleStack, ContainerDoubleStack, ToggleAsideBar } from '@pages/layouts'
 
 const router = createBrowserRouter([
     {
@@ -44,6 +44,10 @@ const router = createBrowserRouter([
     {
         path: '/layouts/container-double-stack',
         element: <ContainerDoubleStack />
+    },
+    {
+        path: '/layouts/toggle-sidebar',
+        element: <ToggleAsideBar />
     }
 ])
 
