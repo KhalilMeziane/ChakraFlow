@@ -16,6 +16,11 @@ const pagesContent: Array<PageTypes> = [
         title: 'Container Double Stack',
         imageSrc: '/thumbnails/layout-container-double-stack.png',
         href: '/layouts/container-double-stack'
+    },
+    {
+        title: 'Toggle sidebar',
+        imageSrc: '/thumbnails/layout-full-width-toggle-aside-bar.png',
+        href: '/layouts/toggle-sidebar'
     }
 ]
 

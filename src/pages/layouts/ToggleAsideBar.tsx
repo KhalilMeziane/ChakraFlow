@@ -52,7 +52,7 @@ export default function ToggleAsideBar() {
             }
             <IconButton {...buttonProps} _active='none' _focus='none' _hover='none' fontSize="18px" variant='ghost' icon={!isOpen ? <BiMenu />: <AiOutlineClose />} aria-label='open menu'/>
           </HStack>
-          <List spacing={4} p="2.5">
+          <List spacing={0} p="0.5">
             {
               listItems.map(item => (<ListElement icon={item.icon} text={isOpen ? item.text : '' } />))
             }
@@ -71,7 +71,7 @@ export default function ToggleAsideBar() {
 
 const ListElement = ({ icon, text }: ListItem) => {
   return (
-    <ListItem as={HStack} spacing={0} h="6">
+    <ListItem as={HStack} spacing={0} h="10" pl="2.5" cursor="pointer" _hover={{ bg: useColorModeValue('gray.50', 'gray.700') }} rounded="md">
       <ListIcon boxSize={5} as={icon} />
       {
         text && <Text>{text}</Text>
