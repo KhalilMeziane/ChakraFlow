@@ -26,6 +26,11 @@ const pagesContent: Array<PageTypes> = [
         title: 'Toggle sidebar with Navbar',
         imageSrc: '/thumbnails/layout-full-width-nav-toggle-aside-bar.png',
         href: '/layouts/nav-toggle-sidebar'
+    },
+    {
+        title: 'Drawer sidebar with Navbar',
+        imageSrc: '/thumbnails/layout-full-width-drawer-aside-bar.png',
+        href: '/layouts/nav-drawer-sidebar'
     }
 ]
 
