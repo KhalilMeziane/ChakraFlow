@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from '@pages/home/page'
 import { AuthBold, AuthColumn, AuthCover, AuthImage, AuthPlain, AuthSidebar, AuthSimple } from '@pages/auth'
-import { FullWidthDoubleStack, ContainerDoubleStack, ToggleAsideBar, NavSidebar, DrawerNavigation } from '@pages/layouts'
+import { FullWidthDoubleStack, ContainerDoubleStack, ToggleAsideBar, NavSidebar, DrawerNavigation, ToggleDrawerNavigation } from '@pages/layouts'
 
 const router = createBrowserRouter([
     {
@@ -52,6 +52,10 @@ const router = createBrowserRouter([
     {
         path: '/layouts/nav-toggle-sidebar',
         element: <NavSidebar />
+    },
+    {
+        path: '/layouts/nav-toggle-drawer-sidebar',
+        element: <ToggleDrawerNavigation />
     },
     {
         path: '/layouts/nav-drawer-sidebar',

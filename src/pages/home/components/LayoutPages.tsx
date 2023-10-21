@@ -28,8 +28,13 @@ const pagesContent: Array<PageTypes> = [
         href: '/layouts/nav-toggle-sidebar'
     },
     {
-        title: 'Drawer sidebar with Navbar',
+        title: 'Toggle Drawer sidebar with Navbar',
         imageSrc: '/thumbnails/layout-full-width-drawer-aside-bar.png',
+        href: '/layouts/nav-toggle-drawer-sidebar'
+    },
+    {
+        title: 'Responsive Drawer sidebar with Navbar',
+        imageSrc: '/thumbnails/layout-full-width-drawer-responsive-aside-bar.png',
         href: '/layouts/nav-drawer-sidebar'
     }
 ]

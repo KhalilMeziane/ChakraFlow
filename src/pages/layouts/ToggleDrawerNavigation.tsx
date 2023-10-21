@@ -1,4 +1,4 @@
-import { Box, Drawer, DrawerContent, Flex, HStack, Heading, IconButton, List, ListIcon, ListItem, Text,  useBreakpointValue,  useColorModeValue, useDisclosure  } from '@chakra-ui/react'
+import { Box, Drawer, DrawerContent, Flex, HStack, Heading, IconButton, List, ListIcon, ListItem, Text,  useColorModeValue, useDisclosure  } from '@chakra-ui/react'
 import { BiMenu } from 'react-icons/bi'
 import { AiOutlineHome, AiOutlineSetting, AiOutlineUserSwitch, AiOutlineFolderOpen, AiOutlineUser, AiOutlineClose } from 'react-icons/ai'
 import { RiTodoLine } from 'react-icons/ri'
@@ -36,23 +36,18 @@ const listItems: ListItem[] = [
 ]
   
 
-export default function DrawerNavigation() {
+export default function ToggleDrawerNavigation() {
     const { getButtonProps, isOpen, onClose } = useDisclosure()
     const buttonProps = getButtonProps()
-
-     const currentsBreakpoint = useBreakpointValue({ lg: 'lg' }, { ssr: false })
-    if (currentsBreakpoint === "lg" && isOpen) {
-        onClose()
-    }
 
     return (
         <>
             <Head>
-                <title>Drawer Sidebar and Navbar Layout | {BrandName}</title>
+                <title>Toggle Sidebar and Navbar Layout | {BrandName}</title>
             </Head>
             <PreviewOptionsNavbar />
-            <Flex as="nav" alignItems="center" justifyContent={{ base: 'space-between', lg: 'flex-end' }} h='10vh' p='2.5'>
-                <HStack spacing={2} display={{ base: 'flex', lg: 'none' }}>
+            <Flex as="nav" alignItems="center" justifyContent="space-between" h='16' py='2.5' pr="2.5">
+                <HStack spacing={2}>
                     <IconButton {...buttonProps} fontSize="18px" variant='ghost' icon={<BiMenu />} aria-label='open menu'/>
                     <Heading as='h1' size="md">{BrandName}</Heading>
                 </HStack>
@@ -62,7 +57,6 @@ export default function DrawerNavigation() {
                 </HStack>
             </Flex>
             <HStack align="start" spacing={0}>
-                <Aside onClose={onClose} display={{ base: 'none', lg: 'block' }} />
                 <Drawer
                     autoFocus={false}
                     isOpen={isOpen}
@@ -73,10 +67,10 @@ export default function DrawerNavigation() {
                     size="xs"
                 >
                     <DrawerContent>
-                        <Aside onClose={onClose} isOpen={isOpen} />
+                        <Aside onClose={onClose} />
                     </DrawerContent>
                 </Drawer>
-                <Flex as="main" ml={{ base: 0, lg: '60' }} w='full' minH="90vh" align="center" justify="center" bg={useColorModeValue('gray.50', 'gray.900')}>
+                <Flex as="main" w='full' minH="90vh" align="center" justify="center" bg={useColorModeValue('gray.50', 'gray.900')}>
                     <Box textAlign="center">
                         <Heading as='h3'>Main Heading</Heading>
                         <Text>Empty Main Content</Text>
@@ -87,37 +81,17 @@ export default function DrawerNavigation() {
     )
 }
 
-type AsideProps = {
-    display?: {
-        base: string
-        lg: string
-    }
-    onClose: () => void
-    isOpen?: boolean
-}
-
-const Aside = ({ onClose, isOpen, ...rest }: AsideProps) => {
+const Aside = ({ onClose }: {  onClose: () => void }) => {
     return (
-        <Box 
-            as="aside"
-            borderRight="2px"
-            borderColor={useColorModeValue('gray.200', 'gray.900')}
-            w={{ base: '100%', lg: 60 }}
-            top="0"
-            pos="fixed"
-            h="100%"
-            minH="100vh"
-            zIndex={99} 
-            {...rest}
-        >
-            <HStack p="2.5" h='10vh' justify="space-between">
+        <Box borderRight="2px" borderColor={useColorModeValue('gray.200', 'gray.900')}>
+            <HStack p="2.5" justify="space-between">
                 <Heading as='h1' size="md">{BrandName}</Heading>
-                <IconButton onClick={onClose}  display={isOpen ? 'flex' : 'none'} fontSize="18px" variant='ghost' icon={<AiOutlineClose />} aria-label='open menu'/>
+                <IconButton onClick={onClose} fontSize="18px" variant='ghost' icon={<AiOutlineClose />} aria-label='open menu'/>
             </HStack>
-            <Box> 
+            <Box as="aside" minH="90vh"> 
                 <List spacing={0} p="0.5">
                     {
-                        listItems.map(item => (<ListElement icon={item.icon} text={item.text} />))
+                    listItems.map(item => (<ListElement icon={item.icon} text={item.text} />))
                     }
                 </List>
             </Box>

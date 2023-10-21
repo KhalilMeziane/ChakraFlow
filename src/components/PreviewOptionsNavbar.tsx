@@ -11,7 +11,8 @@ export default function PreviewOptionsNavbar() {
             bg='black'
             color={useColorModeValue('gray.600', 'white')}
             py="2"
-            w="100%"  
+            w="100%" 
+            position="relative"
             zIndex={999}          
         >
             <Container maxW='7xl'>
