@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <Box bg="gray.50" minH="100vh" py="4">
         <Container maxW="7xl">
-            <Grid templateColumns='repeat(3, 1fr)' gap={4}>
+            <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }} gap={4}>
                 <GridItem w='100%'>
                     <ProjectCard />
                 </GridItem>
