@@ -168,19 +168,19 @@ const ListElement = ({ icon, text }: ListItem) => {
 };
 
 export const ToggleDrawerNavigationString = `import {
-	Box,
-	Drawer,
-	DrawerContent,
-	Flex,
-	HStack,
-	Heading,
-	IconButton,
-	List,
-	ListIcon,
-	ListItem,
-	Text,
-	useColorModeValue,
-	useDisclosure,
+ Box,
+ Drawer,
+ DrawerContent,
+ Flex,
+ HStack,
+ Heading,
+ IconButton,
+ List,
+ ListIcon,
+ ListItem,
+ Text,
+ useColorModeValue,
+ useDisclosure,
 } from "@chakra-ui/react";
 import { ClipboardList, Earth, FolderClosed, House, Menu, Settings, User, Users, X } from "lucide-react";
 
