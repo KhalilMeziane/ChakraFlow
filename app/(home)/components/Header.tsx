@@ -10,13 +10,13 @@ import {
 	useColorModeValue,
 } from "@chakra-ui/react";
 
-import { ChakraUiIcon, ReactIcon, TypescriptIcon } from "@/assets/icons";
+import { ChakraUiIcon, NextIcon, ReactIcon, TypescriptIcon } from "@/assets/icons";
 import Image from "next/image";
 
 export default function Header() {
 	return (
 		<Box as="header" py="10">
-			<Container maxW="7xl">
+			<Container maxW="5xl">
 				<VStack
 					mx="auto"
 					justify="center"
@@ -55,6 +55,12 @@ export default function Header() {
 							height="36"
 							src={ReactIcon}
 							alt="reactjs logo"
+						/>
+						<Image
+							width="36"
+							height="36"
+							src={NextIcon}
+							alt="nextjs logo"
 						/>
 						<Image
 							width="36"

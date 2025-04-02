@@ -11,7 +11,7 @@ import {
 export default function Header() {
 	return (
 		<Box as="header" py="8">
-			<Container maxW="7xl">
+			<Container maxW="5xl">
 				<Heading
 					as="h1"
 					fontWeight={"bold"}
@@ -25,9 +25,8 @@ export default function Header() {
 					fontSize="md"
 					textColor={useColorModeValue("gray.700", "gray.300")}
 				>
-					Layouts are used to structure and organize content within a
-					system, ensuring consistency and usability across pages and
-					features.
+					Layouts help structure and organize content across pages,
+					ensuring consistency and usability in the system.
 				</Text>
 			</Container>
 		</Box>

@@ -10,7 +10,7 @@ import { Box, Container } from "@chakra-ui/react";
 export default function Blocks() {
 	return (
 		<Box as="section">
-			<Container maxW="7xl">
+			<Container maxW="5xl">
 				<Block />
 			</Container>
 		</Box>
