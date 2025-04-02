@@ -5,11 +5,11 @@ import {
 	FullWidthDoubleStack,
 	FullWidthDoubleStackString,
 } from "@/components/ui/layouts";
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container, useColorModeValue } from "@chakra-ui/react";
 
 export default function Blocks() {
 	return (
-		<Box as="section">
+		<Box as="section" py="5" bg={useColorModeValue("white", "#0a0a0a")}>
 			<Container maxW="5xl">
 				<Block />
 			</Container>
@@ -19,7 +19,7 @@ export default function Blocks() {
 
 const Block = () => {
 	return (
-		<Box my="1.5">
+		<Box my="1.5" bg={useColorModeValue("white", "#0a0a0a")}>
 			<Preview
 				Component={<FullWidthDoubleStack />}
 				code={FullWidthDoubleStackString}

@@ -8,6 +8,7 @@ import {
 	TabPanel,
 	HStack,
 	IconButton,
+	useColorModeValue,
 } from "@chakra-ui/react";
 import { ReactNode, useState } from "react";
 import { SyntaxHighlighter } from "./SyntaxHighlighter";
@@ -53,10 +54,10 @@ export default function Preview({
 		>
 			<HStack justify="space-between">
 				<TabList maxW="lg">
-					<Tab textColor="gray.900" fontSize="sm" px="2">
+					<Tab color={useColorModeValue("gray.600", "white")} fontSize="sm" px="2">
 						Preview
 					</Tab>
-					<Tab textColor="gray.900" fontSize="sm" px="2">
+					<Tab color={useColorModeValue("gray.600", "white")} fontSize="sm" px="2">
 						Code
 					</Tab>
 				</TabList>

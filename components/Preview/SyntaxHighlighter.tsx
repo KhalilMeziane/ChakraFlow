@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Check, Copy } from "lucide-react";
 import { Box, Button, useColorModeValue, Flex, Text } from "@chakra-ui/react";
 import { Highlight, themes } from "prism-react-renderer";
@@ -34,7 +34,7 @@ export function SyntaxHighlighter({
 
 	return (
 		<Box position="relative" borderRadius="sm" overflow="hidden">
-			<Highlight theme={selectedTheme} code={code} language={language}>
+			<Highlight theme={selectedTheme} code={code} language={language} key={useId()}>
 				{({
 					className,
 					style,
@@ -56,7 +56,7 @@ export function SyntaxHighlighter({
 						maxH="60vh"
 					>
 						{tokens.map((line, i) => (
-							<Flex {...getLineProps({ line, key: i })} key={i}>
+							<Flex {...getLineProps({ line, key: i })} key={useId()}>
 								{showLineNumbers && (
 									<Text
 										as="span"
@@ -75,7 +75,7 @@ export function SyntaxHighlighter({
 										<Text
 											as="span"
 											{...getTokenProps({ token, key })}
-											key={key}
+											key={useId()}
 										/>
 									))}
 								</Box>

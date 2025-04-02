@@ -10,7 +10,7 @@ import {
 
 export default function Header() {
 	return (
-		<Box as="header" py="8">
+		<Box as="header" py="8" bg={useColorModeValue("white", "#0a0a0a")}>
 			<Container maxW="5xl">
 				<Heading
 					as="h1"
