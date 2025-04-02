@@ -23,6 +23,9 @@ export default function Navbar() {
 			borderBottom={1}
 			borderStyle={"solid"}
 			borderColor={useColorModeValue("gray.200", "gray.900")}
+			pos={"fixed"}
+			top="0"
+			w="full"
 		>
 			<Container maxW="5xl">
 				<Flex align={"center"}>

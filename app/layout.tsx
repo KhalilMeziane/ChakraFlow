@@ -29,7 +29,7 @@ export default function RootLayout({
 				<Providers>
 					<Flex w="full" h="100vh" minH="100vh" flexDir="column">
 						<Navbar />
-						<Box flexGrow="2">
+						<Box flexGrow="2" pt="10">
 							{children}
 						</Box>
 						<Footer />
