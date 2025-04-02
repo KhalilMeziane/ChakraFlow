@@ -33,10 +33,10 @@ export default function Header() {
 					>
 						Open Source, and Free
 					</Box>
-					<Heading as="h1" textAlign="center" size="2xl" py="3">
+					<Heading as="h1" fontWeight={"extrabold"} textAlign="center" size="2xl" py="3" textColor={useColorModeValue('#0a0a0a', '#dadada')}>
 						The Ultimate Chakra UI Dashboard Template and Toolkit
 					</Heading>
-					<Text textAlign="center" fontSize="lg">
+					<Text textAlign="center" fontSize="md" textColor={useColorModeValue('#0a0a00', '#dadadd')}>
 						Your Chakra UI-powered dashboard solution. Packed with
 						features like responsive design, dashboard elements,
 						pages, UI components, and dynamic charts, ChakraFlow

@@ -13,18 +13,17 @@ export default function Elements() {
 		<Box as="section" py="8">
 			<Container maxW="7xl">
 				<Heading
-					fontSize="xl"
-					fontWeight={"semibold"}
+					as="h2"
+					fontSize="2xl"
+					fontWeight={"bold"}
 					textTransform="capitalize"
 					mb="3"
 				>
-					layout Blocks
+					Elements
 				</Heading>
 				<Grid templateColumns="repeat(4, 1fr)" gap={4}>
-					<Card title="full width double stack" />
-					<Card title="full width double stack" />
-					<Card title="full width double stack" />
-					<Card title="full width double stack" />
+					<Card title="Layouts" />
+					<Card title="Forms" />
 				</Grid>
 			</Container>
 		</Box>
