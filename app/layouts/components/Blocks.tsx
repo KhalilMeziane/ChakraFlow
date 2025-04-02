@@ -19,7 +19,7 @@ export default function Blocks() {
 
 const Block = () => {
 	return (
-		<Box my="1.5" bg={useColorModeValue("white", "#0a0a0a")}>
+		<Box pb="8" bg={useColorModeValue("white", "#0a0a0a")}>
 			<Preview
 				Component={<FullWidthDoubleStack />}
 				code={FullWidthDoubleStackString}

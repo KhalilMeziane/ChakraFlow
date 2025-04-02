@@ -51,8 +51,8 @@ const Card = ({ title }: { title: string }) => {
 						w="25%"
 						rounded="sm"
 						borderStyle="dashed"
-						borderColor={useColorModeValue("gray.400", "gray.200")}
-						bg={useColorModeValue("blue.50", "blue.50")}
+						borderColor={useColorModeValue("gray.400", "#1c1c1c")}
+						bg={useColorModeValue("blue.50", "blue.700")}
 					></Box>
 					<Box
 						h="full"
@@ -60,8 +60,8 @@ const Card = ({ title }: { title: string }) => {
 						w="75%"
 						rounded="sm"
 						borderStyle="dashed"
-						borderColor={useColorModeValue("gray.400", "gray.200")}
-						bg={useColorModeValue("white", "gray.700")}
+						borderColor={useColorModeValue("gray.400", "#1c1c1c")}
+						bg={useColorModeValue("white", "#0a0a0a")}
 					></Box>
 				</HStack>
 			</Box>

@@ -54,10 +54,18 @@ export default function Preview({
 		>
 			<HStack justify="space-between">
 				<TabList maxW="lg">
-					<Tab color={useColorModeValue("gray.600", "white")} fontSize="sm" px="2">
+					<Tab
+						color={useColorModeValue("gray.600", "white")}
+						fontSize="sm"
+						px="2"
+					>
 						Preview
 					</Tab>
-					<Tab color={useColorModeValue("gray.600", "white")} fontSize="sm" px="2">
+					<Tab
+						color={useColorModeValue("gray.600", "white")}
+						fontSize="sm"
+						px="2"
+					>
 						Code
 					</Tab>
 				</TabList>
@@ -97,7 +105,7 @@ export default function Preview({
 			<TabPanels>
 				<TabPanel
 					border="1px"
-					borderColor="gray.200"
+					borderColor={useColorModeValue("gray.400", "#1c1c1c")}
 					p="2"
 					style={{
 						width: `${width}px`,

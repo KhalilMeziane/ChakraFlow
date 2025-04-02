@@ -57,8 +57,8 @@ export default function FullWidthDoubleStack() {
 					<Heading as="h2" size="md">
 						Overview
 					</Heading>
-					<Divider orientation="vertical" />
-					<Breadcrumb>
+					<Divider orientation="vertical" display={{ base: 'none', lg: 'block' }} />
+					<Breadcrumb display={{ base: 'none', lg: 'block' }}>
 						<BreadcrumbItem>
 							<BreadcrumbLink href="#">Home</BreadcrumbLink>
 						</BreadcrumbItem>
@@ -112,8 +112,8 @@ export default function FullWidthDoubleStack() {
       <Flex justifyContent="space-between" gap="4" h='16' p='3' borderBottom="1px" borderColor={useColorModeValue('gray.200', 'gray.600')}>
         <HStack alignItems="center">
           <Heading as="h2" size="md">Overview</Heading>
-          <Divider orientation='vertical' />
-          <Breadcrumb>
+          <Divider orientation='vertical' display={{ base: 'none', lg: 'block' }} />
+          <Breadcrumb display={{ base: 'none', lg: 'block' }}>
             <BreadcrumbItem>
               <BreadcrumbLink href='#'>Home</BreadcrumbLink>
             </BreadcrumbItem>
