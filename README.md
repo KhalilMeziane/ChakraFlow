@@ -37,7 +37,7 @@ Contributions are always welcome and recommended! Here is how:
 
 ## Credits 
 - [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
+- [Next](https://next.org/)
 - [ChakraUi](https://chakra-ui.com/)
 
 ## Social Media
