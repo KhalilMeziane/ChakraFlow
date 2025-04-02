@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ChakraFlow
+Your Chakra UI-powered dashboard solution. Packed with features like responsive design, dashboard elements, pages, UI components, and dynamic charts, ChakraFlow simplifies backend development. It's available for free and For developers of all levels.
 
-## Getting Started
+## Introduction
+Looking for a powerful and comprehensive free Chakra UI React dashboard template? Meet ChakraFlow. It's feature-rich, highly customizable, and follows industry standards for ease of use and scalability. Craft premium-quality, responsive applications effortlessly with TypeScript support. Your web apps will shine across all devices.
+[View Demo](https://chakra-flow.vercel.app/)
 
-First, run the development server:
+## Key Features
+- This solution allows you to reduce MVP development costs
+- ChakraFlow is based on a rich library powered by [ChakraUi](https://chakra-ui.com/)
+- 100% Free: start using it for your projects right away. No hidden payments, no trials, nothing
+- ⭐ Modern & great for projects of tomorrow: built with [React](https://reactjs.org/), and [ChakraUi](https://chakra-ui.com/)
+- Mobile first: optimized to reduce data usage on mobile devices
+- Responsive & adaptive: supports mobile, tablet, and desktop screens
+- Theming: use built-in light and dark themes or implement your own theme with just lines of code
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What's Included
+- Dashboard Layouts
+    - Classic
+    - Modern
+    - Compact
+- Core Dashboard Features
+- User Pages
+  - Account Settings
+  - Login
+  - Registration
+  - Error
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions are always welcome and recommended! Here is how:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
+- Clone to your machine `git clone https://github.com/MezianeKhalil/ChakraFlow.git`
+- Make your changes
+- Create a pull request
 
-## Learn More
+## Credits 
+- [React](https://reactjs.org/)
+- [Next](https://next.org/)
+- [ChakraUi](https://chakra-ui.com/)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Social Media
+- Twitter : [https://twitter.com/khalil_meziane](https://twitter.com/khalil_meziane)
+- linkedin : [https://www.linkedin.com/in/khalil-meziane/](https://www.linkedin.com/in/khalil-meziane/)
