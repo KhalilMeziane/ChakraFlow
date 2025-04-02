@@ -1,6 +1,7 @@
 "use client";
 
 import {
+	AspectRatio,
 	Box,
 	Container,
 	Grid,
@@ -23,7 +24,14 @@ export default function Elements() {
 				>
 					Elements
 				</Heading>
-				<Grid templateColumns="repeat(3, 1fr)" gap={4}>
+				<Grid
+					templateColumns={{
+						base: "repeat(1, 1fr)",
+						md: "repeat(2, 1fr)",
+						lg: "repeat(3, 1fr)",
+					}}
+					gap={4}
+				>
 					<Card title="Layouts" />
 				</Grid>
 			</Container>
@@ -34,51 +42,20 @@ export default function Elements() {
 const Card = ({ title }: { title: string }) => {
 	return (
 		<Box as={Link} href="/layouts">
-			<Box
-				border="1px"
-				borderColor={useColorModeValue("#e5e5e5", "gray.800")}
-				p="4"
-				bg={useColorModeValue("#fafafa", "#171717")}
-				rounded="md"
-				h="44"
-				mb="2"
-				_hover={{ bg: useColorModeValue("#fafafa55", "#171717aa") }}
-			>
-				<HStack h="full">
-					<Box
-						h="full"
-						border="1px"
-						w="25%"
-						rounded="sm"
-						borderStyle="dashed"
-						borderColor={useColorModeValue("gray.400", "#1c1c1c")}
-						bg={useColorModeValue("blue.50", "blue.700")}
-					></Box>
-					<Box
-						h="full"
-						border="1px"
-						w="75%"
-						rounded="sm"
-						p="3"
-						borderStyle="dashed"
-						borderColor={useColorModeValue("gray.400", "#1c1c1c")}
-						bg={useColorModeValue("white", "#0a0a0a")}
-					>
+			<AspectRatio ratio={16 / 9} w="full" mb="2">
+				<Box
+					border="1px"
+					borderColor={useColorModeValue("#e5e5e5", "gray.800")}
+					p="4"
+					bg={useColorModeValue("#fafafa", "#171717")}
+					rounded="md"
+					_hover={{ bg: useColorModeValue("#fafafa55", "#171717aa") }}
+				>
+					<HStack h="full" w="full">
 						<Box
-							h="15%"
+							h="full"
 							border="1px"
-							rounded="sm"
-							borderStyle="dashed"
-							mb="2"
-							borderColor={useColorModeValue(
-								"gray.400",
-								"#1c1c1c"
-							)}
-							bg={useColorModeValue("blue.50", "blue.700")}
-						></Box>
-						<Box
-							h="80%"
-							border="1px"
+							w="25%"
 							rounded="sm"
 							borderStyle="dashed"
 							borderColor={useColorModeValue(
@@ -87,9 +64,47 @@ const Card = ({ title }: { title: string }) => {
 							)}
 							bg={useColorModeValue("blue.50", "blue.700")}
 						></Box>
-					</Box>
-				</HStack>
-			</Box>
+						<Box
+							h="full"
+							border="1px"
+							w="75%"
+							rounded="sm"
+							p="3"
+							borderStyle="dashed"
+							borderColor={useColorModeValue(
+								"gray.400",
+								"#1c1c1c"
+							)}
+							bg={useColorModeValue("white", "#0a0a0a")}
+						>
+							<Box
+								h="15%"
+								border="1px"
+								rounded="sm"
+								borderStyle="dashed"
+								mb="2"
+								borderColor={useColorModeValue(
+									"gray.400",
+									"#1c1c1c"
+								)}
+								bg={useColorModeValue("blue.50", "blue.700")}
+							></Box>
+							<Box
+								h="80%"
+								border="1px"
+								rounded="sm"
+								borderStyle="dashed"
+								borderColor={useColorModeValue(
+									"gray.400",
+									"#1c1c1c"
+								)}
+								bg={useColorModeValue("blue.50", "blue.700")}
+							></Box>
+						</Box>
+					</HStack>
+				</Box>
+			</AspectRatio>
+
 			<Heading
 				fontSize="md"
 				fontWeight={"medium"}
