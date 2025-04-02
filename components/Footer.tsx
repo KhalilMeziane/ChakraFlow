@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Footer() {
 	return (
 		<Box as="footer" bg={useColorModeValue("#fafafa", "#171717")} py="6">
-			<Container maxW="5xl">
+			<Container maxW="7xl">
 				<HStack justify="space-between">
 					<Text textAlign="center" fontSize="sm">
 						©2025 ChakraFlow, All rights reserved.

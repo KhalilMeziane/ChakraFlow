@@ -26,8 +26,9 @@ export default function Navbar() {
 			pos={"fixed"}
 			top="0"
 			w="full"
+			zIndex="99"
 		>
-			<Container maxW="5xl">
+			<Container maxW="7xl">
 				<Flex align={"center"}>
 					<Flex flex={{ base: 1 }}>
 						<Text

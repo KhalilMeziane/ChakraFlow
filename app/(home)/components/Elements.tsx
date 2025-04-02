@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Elements() {
 	return (
 		<Box as="section" py="8" bg={useColorModeValue("white", "#0a0a0a")}>
-			<Container maxW="5xl">
+			<Container maxW="7xl">
 				<Heading
 					as="h2"
 					fontSize="2xl"
