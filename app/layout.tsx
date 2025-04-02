@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 export const metadata: Metadata = {
 	title: {
 		default: "Chakra Flow",
@@ -33,6 +35,7 @@ export default function RootLayout({
 						<Footer />
 					</Flex>
 				</Providers>
+				<GoogleAnalytics gaId="G-TFZDXY5B1F" />
 			</body>
 		</html>
 	);
