@@ -1,15 +1,14 @@
 "use client";
 
+import AuthFormView from "@/components/ElementsView/AuthFormView";
+import LayoutsView from "@/components/ElementsView/LayoutsView";
 import {
-	AspectRatio,
 	Box,
 	Container,
 	Grid,
 	Heading,
-	HStack,
 	useColorModeValue,
 } from "@chakra-ui/react";
-import Link from "next/link";
 
 export default function Elements() {
 	return (
@@ -32,86 +31,11 @@ export default function Elements() {
 					}}
 					gap={4}
 				>
-					<Card title="Layouts" />
+					<LayoutsView title="Layouts" href="/layouts" />
+					<AuthFormView title="Auth Forms" href="/auth-forms" />
+
 				</Grid>
 			</Container>
 		</Box>
 	);
 }
-
-const Card = ({ title }: { title: string }) => {
-	return (
-		<Box as={Link} href="/layouts">
-			<AspectRatio ratio={16 / 9} w="full" mb="2">
-				<Box
-					border="1px"
-					borderColor={useColorModeValue("#e5e5e5", "gray.800")}
-					p="4"
-					bg={useColorModeValue("#fafafa", "#171717")}
-					rounded="md"
-					_hover={{ bg: useColorModeValue("#fafafa55", "#171717aa") }}
-				>
-					<HStack h="full" w="full">
-						<Box
-							h="full"
-							border="1px"
-							w="25%"
-							rounded="sm"
-							borderStyle="dashed"
-							borderColor={useColorModeValue(
-								"gray.400",
-								"#1c1c1c"
-							)}
-							bg={useColorModeValue("blue.50", "blue.700")}
-						></Box>
-						<Box
-							h="full"
-							border="1px"
-							w="75%"
-							rounded="sm"
-							p="3"
-							borderStyle="dashed"
-							borderColor={useColorModeValue(
-								"gray.400",
-								"#1c1c1c"
-							)}
-							bg={useColorModeValue("white", "#0a0a0a")}
-						>
-							<Box
-								h="15%"
-								border="1px"
-								rounded="sm"
-								borderStyle="dashed"
-								mb="2"
-								borderColor={useColorModeValue(
-									"gray.400",
-									"#1c1c1c"
-								)}
-								bg={useColorModeValue("blue.50", "blue.700")}
-							></Box>
-							<Box
-								h="80%"
-								border="1px"
-								rounded="sm"
-								borderStyle="dashed"
-								borderColor={useColorModeValue(
-									"gray.400",
-									"#1c1c1c"
-								)}
-								bg={useColorModeValue("blue.50", "blue.700")}
-							></Box>
-						</Box>
-					</HStack>
-				</Box>
-			</AspectRatio>
-
-			<Heading
-				fontSize="md"
-				fontWeight={"medium"}
-				textTransform="capitalize"
-			>
-				{title}
-			</Heading>
-		</Box>
-	);
-};
