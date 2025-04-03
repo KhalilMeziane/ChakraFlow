@@ -25,8 +25,8 @@ export default function Header() {
 				>
 					<Box
 						fontWeight="medium"
-						bg={useColorModeValue("blue.50", "gray.800")}
-						color="blue.600"
+						bg={useColorModeValue("#53c9c511", "#53c9c533")}
+						color={useColorModeValue("#02807c", "#3ffbfd")}
 						px="8"
 						py="2"
 						rounded="full"

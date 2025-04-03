@@ -52,8 +52,8 @@ export function SyntaxHighlighter({
 						borderRadius="md"
 						className={className}
 						style={style}
-						h="60vh"
-						maxH="60vh"
+						h="70vh"
+						maxH="70vh"
 					>
 						{tokens.map((line, i) => (
 							<Flex {...getLineProps({ line, key: i })} key={i}>

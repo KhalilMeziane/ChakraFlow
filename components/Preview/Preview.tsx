@@ -105,18 +105,18 @@ export default function Preview({
 			<TabPanels>
 				<TabPanel
 					border="1px"
-					borderColor={useColorModeValue("gray.400", "#1c1c1c")}
+					borderColor={useColorModeValue("gray.200", "gray.700")}
 					p="2"
 					style={{
 						width: `${width}px`,
 						maxWidth: "100%",
 					}}
-					h="60vh"
-					maxH="60vh"
+					h="70vh"
+					maxH="70vh"
 				>
 					<IframeProvider>{Component}</IframeProvider>
 				</TabPanel>
-				<TabPanel p="0.5" h="60vh" maxH="60vh">
+				<TabPanel p="0.5" h="70vh" maxH="70vh">
 					<SyntaxHighlighter
 						code={code}
 						language="js"

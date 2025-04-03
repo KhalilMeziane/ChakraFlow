@@ -63,15 +63,15 @@ export default function FullWidthDoubleStack() {
 					/>
 					<Breadcrumb display={{ base: "none", md: "block" }}>
 						<BreadcrumbItem>
-							<BreadcrumbLink href="#">Home</BreadcrumbLink>
+							<BreadcrumbLink >Home</BreadcrumbLink>
 						</BreadcrumbItem>
 
 						<BreadcrumbItem>
-							<BreadcrumbLink href="#">Docs</BreadcrumbLink>
+							<BreadcrumbLink >Docs</BreadcrumbLink>
 						</BreadcrumbItem>
 
 						<BreadcrumbItem isCurrentPage>
-							<BreadcrumbLink href="#">Breadcrumb</BreadcrumbLink>
+							<BreadcrumbLink >Breadcrumb</BreadcrumbLink>
 						</BreadcrumbItem>
 					</Breadcrumb>
 				</HStack>
@@ -162,15 +162,15 @@ export default function FullWidthDoubleStack() {
 					<Divider orientation="vertical" display={{ base: 'none', md: 'block' }} />
 					<Breadcrumb display={{ base: 'none', md: 'block' }}>
 						<BreadcrumbItem>
-							<BreadcrumbLink href="#">Home</BreadcrumbLink>
+							<BreadcrumbLink >Home</BreadcrumbLink>
 						</BreadcrumbItem>
 
 						<BreadcrumbItem>
-							<BreadcrumbLink href="#">Docs</BreadcrumbLink>
+							<BreadcrumbLink >Docs</BreadcrumbLink>
 						</BreadcrumbItem>
 
 						<BreadcrumbItem isCurrentPage>
-							<BreadcrumbLink href="#">Breadcrumb</BreadcrumbLink>
+							<BreadcrumbLink >Breadcrumb</BreadcrumbLink>
 						</BreadcrumbItem>
 					</Breadcrumb>
 				</HStack>
