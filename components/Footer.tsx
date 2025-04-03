@@ -19,13 +19,13 @@ export default function Footer() {
 						©2025 ChakraFlow, All rights reserved.
 					</Text>
 					<HStack>
-						<Link href="https://www.linkedin.com/in/khalil-meziane/" target="_blank">
+						<Link href="https://www.linkedin.com/in/khalil-meziane/" target="_blank" aria-label="linkedin account">
 							<Linkedin size="20" />
 						</Link>
-						<Link href="https://x.com/khalil_meziane" target="_blank">
+						<Link href="https://x.com/khalil_meziane" target="_blank" aria-label="twitter or x account">
 							<Twitter size="20" />
 						</Link>
-						<Link href="https://github.com/KhalilMeziane" target="_blank">
+						<Link href="https://github.com/KhalilMeziane" target="_blank" aria-label="github account">
 							<Github size="20" />
 						</Link>
 					</HStack>
