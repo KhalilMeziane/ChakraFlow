@@ -18,7 +18,7 @@ import {
 
 export default function Image() {
 	return (
-		<Container maxW="7xl" as="main">
+		<Container maxW="7xl" as="main" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 			<Flex minH="100vh" alignItems="center">
 				<Box w="50%" display={{ base: "none", lg: "block" }}>
 					<Box boxSize={{ lg: "lg", xl: "xl" }} mx="auto">
@@ -30,7 +30,6 @@ export default function Image() {
 				</Box>
 				<Box
 					w={{ base: "100%", lg: "50%" }}
-					bg={useColorModeValue("gray.50", "gray.900")}
 					h="100vh"
 					p="16"
 				>
@@ -73,7 +72,7 @@ export default function Image() {
 export const ImageString = `import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, Image as Img, useColorModeValue, Container } from '@chakra-ui/react'
 export default function Image() {
 	return (
-		<Container maxW="7xl" as="main">
+		<Container maxW="7xl" as="main" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 			<Flex minH="100vh" alignItems="center">
 				<Box w="50%" display={{ base: "none", lg: "block" }}>
 					<Box boxSize={{ lg: "lg", xl: "xl" }} mx="auto">
@@ -82,7 +81,6 @@ export default function Image() {
 				</Box>
 				<Box
 					w={{ base: "100%", lg: "50%" }}
-					bg={useColorModeValue("gray.50", "gray.900")}
 					h="100vh"
 					p="16"
 				>

@@ -17,6 +17,7 @@ export default function Simple() {
 				rounded="lg"
 				shadow="sm"
 				bg={useColorModeValue("white", "gray.800")}
+				color={useColorModeValue("gray.900", "gray.50")}
 				spacing="4"
 			>
 				<Heading as="h1" fontSize="3xl">
@@ -63,6 +64,7 @@ export default function Simple() {
 				rounded="lg"
 				shadow="sm"
 				bg={useColorModeValue("white", "gray.800")}
+				color={useColorModeValue("gray.900", "gray.50")}
 				spacing="4"
 			>
 				<Heading as="h1" fontSize="3xl">

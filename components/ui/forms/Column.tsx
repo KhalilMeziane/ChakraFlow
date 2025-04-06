@@ -13,6 +13,7 @@ import {
 	VStack,
 	Avatar,
 	HStack,
+	useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function Column() {
@@ -60,7 +61,7 @@ export default function Column() {
 					</HStack>
 				</VStack>
 			</Box>
-			<Box w={{ base: "100%", lg: "50%" }} minH="100vh" p="16">
+			<Box w={{ base: "100%", lg: "50%" }} minH="100vh" p="16" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 				<VStack
 					align="center"
 					spacing="5"
@@ -94,7 +95,7 @@ export default function Column() {
 	);
 }
 
-export const ColumnString = `import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, Avatar, HStack } from '@chakra-ui/react'
+export const ColumnString = `import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, Avatar, HStack, useColorModeValue } from '@chakra-ui/react'
 
 export default function Column() {
   return (
@@ -118,7 +119,7 @@ export default function Column() {
             </HStack>
         </VStack>
       </Box>
-      <Box w={{ base: '100%', lg: '50%' }} minH="100vh" p='16'>
+      <Box w={{ base: '100%', lg: '50%' }} minH="100vh" p='16' bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
         <VStack align="center" spacing="5" justify="center" h="100%" alignItems="stretch">
           <Heading as='h1' fontSize="3xl" textAlign="center">Sign in to Brand</Heading>
           <VStack spacing="4" as="form">

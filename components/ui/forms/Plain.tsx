@@ -10,12 +10,13 @@ import {
 	Input,
 	Link,
 	Text,
+	useColorModeValue,
 	VStack,
 } from "@chakra-ui/react";
 
 export default function Plain() {
 	return (
-		<Container maxW="7xl" as="main">
+		<Container maxW="7xl" as="main" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 			<Flex minH="100vh" align="center">
 				<VStack
 					w={{ base: "100%", md: "60%", lg: "45%", xl: "35%" }}
@@ -50,10 +51,10 @@ export default function Plain() {
 	);
 }
 
-export const PlainString = `import { Button, Container, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack } from '@chakra-ui/react'
+export const PlainString = `import { Button, Container, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, useColorModeValue } from '@chakra-ui/react'
 export default function Plain() {
 	return (
-		<Container maxW="7xl" as="main">
+		<Container maxW="7xl" as="main" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 			<Flex minH="100vh" align="center">
 				<VStack
 					w={{ base: "100%", md: "60%", lg: "45%", xl: "35%" }}
