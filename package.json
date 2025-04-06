@@ -22,7 +22,8 @@
     "prism-react-renderer": "^2.4.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-frame-component": "^5.2.7"
+    "react-frame-component": "^5.2.7",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",
