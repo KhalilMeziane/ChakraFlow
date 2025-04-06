@@ -66,7 +66,7 @@ export default function AiChat({
               w="50%"
               rounded="sm"
               borderStyle="solid"
-              borderColor={useColorModeValue("5fc9ca55", "#5fc9caaa")}
+              borderColor={useColorModeValue("gray.400", "#5fc9caaa")}
             />
           </VStack>
         </Box>

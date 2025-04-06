@@ -4,14 +4,20 @@ import {
   Button,
   Flex,
   Heading,
+  Icon,
   IconButton,
   Input,
   SimpleGrid,
+  Spacer,
+  Stack,
   Text,
   VStack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaMicrophone, FaPaperPlane } from "react-icons/fa";
+import { FaMicrophone, FaPaperPlane, FaRegLightbulb } from "react-icons/fa";
+import { FiMap } from "react-icons/fi";
+import { GoBook } from "react-icons/go";
+import { MdOutlineQuestionMark } from "react-icons/md";
 
 export default function Simple() {
   const cardBgColor = useColorModeValue("teal.600", "teal.700");
@@ -19,10 +25,13 @@ export default function Simple() {
   const textColor = useColorModeValue("white", "gray.200");
 
   const prompts = [
-    "What's the weather like today?",
-    "Share the closest coffee shop around me",
-    "What does React.js do?",
-    "Recommend some books I can read",
+    { label: "What's the weather like today?", icon: FaRegLightbulb },
+    {
+      label: "Share the closest coffee shop around me",
+      icon: FiMap,
+    },
+    { label: "What does React.js do?", icon: MdOutlineQuestionMark },
+    { label: "Recommend some books I can read", icon: GoBook },
   ];
 
   return (
@@ -44,7 +53,9 @@ export default function Simple() {
         <Heading as="h1" fontSize="3xl" color="teal.400">
           Hello, User
         </Heading>
-        <Text fontSize="lg">How can I help you today?</Text>
+        <Text color={useColorModeValue("dark", "white")} fontSize="lg">
+          How can I help you today?
+        </Text>
         <SimpleGrid
           my={8}
           columns={{ base: 1, sm: 2, lg: 4 }}
@@ -63,7 +74,19 @@ export default function Simple() {
               h="auto"
               whiteSpace="normal"
             >
-              {prompt}
+              <Stack
+                h={"full"}
+                w={"full"}
+                direction={{ base: "row", sm: "column" }}
+                spacing={{ base: 2, md: 6 }}
+                align={"end"}
+              >
+                <Stack w={"full"} align={"start"}>
+                  <Text>{prompt.label}</Text>
+                </Stack>
+                <Spacer />
+                <Icon as={prompt.icon} />
+              </Stack>
             </Button>
           ))}
         </SimpleGrid>
@@ -72,6 +95,7 @@ export default function Simple() {
             placeholder="Ask me anything..."
             size="lg"
             rounded="md"
+            color={useColorModeValue("dark", "white")}
             borderColor={useColorModeValue("gray.300", "gray.600")}
             _focus={{ borderColor: useColorModeValue("teal.400", "teal.400") }}
           />
@@ -101,18 +125,25 @@ export default function Simple() {
     </Flex>
   );
 }
-export const SimpleString = `import {
+export const SimpleString = `
+import {
   Button,
   Flex,
   Heading,
+  Icon,
   IconButton,
   Input,
   SimpleGrid,
+  Spacer,
+  Stack,
   Text,
   VStack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaMicrophone, FaPaperPlane } from "react-icons/fa";
+import { FaMicrophone, FaPaperPlane, FaRegLightbulb } from "react-icons/fa";
+import { FiMap } from "react-icons/fi";
+import { GoBook } from "react-icons/go";
+import { MdOutlineQuestionMark } from "react-icons/md";
 
 export default function Simple() {
   const cardBgColor = useColorModeValue("teal.600", "teal.700");
@@ -120,10 +151,13 @@ export default function Simple() {
   const textColor = useColorModeValue("white", "gray.200");
 
   const prompts = [
-    "What's the weather like today?",
-    "Share the closest coffee shop around me",
-    "What does React.js do?",
-    "Recommend some books I can read",
+    { label: "What's the weather like today?", icon: FaRegLightbulb },
+    {
+      label: "Share the closest coffee shop around me",
+      icon: FiMap,
+    },
+    { label: "What does React.js do?", icon: MdOutlineQuestionMark },
+    { label: "Recommend some books I can read", icon: GoBook },
   ];
 
   return (
@@ -145,7 +179,9 @@ export default function Simple() {
         <Heading as="h1" fontSize="3xl" color="teal.400">
           Hello, User
         </Heading>
-        <Text fontSize="lg">How can I help you today?</Text>
+        <Text color={useColorModeValue("dark", "white")} fontSize="lg">
+          How can I help you today?
+        </Text>
         <SimpleGrid
           my={8}
           columns={{ base: 1, sm: 2, lg: 4 }}
@@ -164,7 +200,19 @@ export default function Simple() {
               h="auto"
               whiteSpace="normal"
             >
-              {prompt}
+              <Stack
+                h={"full"}
+                w={"full"}
+                direction={{ base: "row", sm: "column" }}
+                spacing={{ base: 2, md: 6 }}
+                align={"end"}
+              >
+                <Stack w={"full"} align={"start"}>
+                  <Text>{prompt.label}</Text>
+                </Stack>
+                <Spacer />
+                <Icon as={prompt.icon} />
+              </Stack>
             </Button>
           ))}
         </SimpleGrid>
@@ -173,6 +221,7 @@ export default function Simple() {
             placeholder="Ask me anything..."
             size="lg"
             rounded="md"
+            color={useColorModeValue("dark", "white")}
             borderColor={useColorModeValue("gray.300", "gray.600")}
             _focus={{ borderColor: useColorModeValue("teal.400", "teal.400") }}
           />
