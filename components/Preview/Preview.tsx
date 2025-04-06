@@ -9,6 +9,7 @@ import {
 	HStack,
 	IconButton,
 	useColorModeValue,
+	useColorMode,
 } from "@chakra-ui/react";
 import { ReactNode, useState } from "react";
 import { SyntaxHighlighter } from "./SyntaxHighlighter";
@@ -40,6 +41,7 @@ export default function Preview({
 }: CodePreviewTabsProps) {
 	const [activePreset, setActivePreset] = useState<DevicePreset>("desktop");
 	const [width, setWidth] = useState(defaultWidth);
+	const { colorMode } = useColorMode()
 
 	const setDevicePreset = (preset: DevicePreset) => {
 		setActivePreset(preset);
@@ -114,7 +116,7 @@ export default function Preview({
 					h="70vh"
 					maxH="70vh"
 				>
-					<IframeProvider>{Component}</IframeProvider>
+					<IframeProvider colorMode={colorMode}>{Component}</IframeProvider>
 				</TabPanel>
 				<TabPanel p="0.5" h="70vh" maxH="70vh">
 					<SyntaxHighlighter

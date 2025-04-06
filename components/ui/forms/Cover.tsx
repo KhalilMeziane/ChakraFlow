@@ -42,7 +42,7 @@ export default function Cover() {
 					h="100%"
 				></Box>
 			</Box>
-			<Box w={{ base: "100%", lg: "35%" }} minH="100vh" p="8">
+			<Box w={{ base: "100%", lg: "35%" }} minH="100vh" p="8" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 				<VStack
 					align="center"
 					spacing="5"
@@ -107,7 +107,7 @@ export default function Cover() {
 					h="100%"
 				></Box>
 			</Box>
-			<Box w={{ base: "100%", lg: "35%" }} minH="100vh" p="8">
+			<Box w={{ base: "100%", lg: "35%" }} minH="100vh" p="8" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 				<VStack
 					align="center"
 					spacing="5"

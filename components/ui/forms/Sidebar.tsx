@@ -18,7 +18,7 @@ import {
 
 export default function Sidebar() {
 	return (
-		<Container maxW="7xl" as="main">
+		<Container maxW="7xl" as="main" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 			<Flex minH="100vh">
 				<Box
 					w="30%"
@@ -100,7 +100,7 @@ export default function Sidebar() {
 export const SidebarString = `import { Avatar, Box, Button, Container, Flex, FormControl, FormLabel, Heading, Input, Link, Text, VStack, useColorModeValue } from '@chakra-ui/react'
 export default function Sidebar() {
 	return (
-		<Container maxW="7xl" as="main">
+		<Container maxW="7xl" as="main" bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.900", "gray.50")}>
 			<Flex minH="100vh">
 				<Box
 					w="30%"
