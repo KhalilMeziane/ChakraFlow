@@ -2,6 +2,7 @@
 
 import AuthFormView from "@/components/ElementsView/AuthFormView";
 import LayoutsView from "@/components/ElementsView/LayoutsView";
+import AiChat from "@/components/ElementsView/AiChat";
 import {
 	Box,
 	Container,
@@ -32,6 +33,7 @@ export default function Elements() {
 				>
 					<LayoutsView title="Layouts" href="/layouts" />
 					<AuthFormView title="Auth Forms" href="/auth-forms" />
+					<AiChat title="Ai Chat" href="/ai-chat" />
 
 				</Grid>
 			</Container>
