@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export default function Header() {
 	return (
-		<Box as="header" py="10" bg={useColorModeValue("white", "#0a0a0a")}>
+		<Box as="header" py="10" >
 			<Container maxW="7xl">
 				<VStack
 					mx="auto"
