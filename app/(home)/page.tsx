@@ -6,7 +6,7 @@ import { Stack, useColorModeValue } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <Stack bg={useColorModeValue("white", "#0a0a0a")}>
+    <Stack h={"full"} w={"full"} bg={useColorModeValue("white", "#0a0a0a")}>
       <Header />
       <main>
         <Elements />
