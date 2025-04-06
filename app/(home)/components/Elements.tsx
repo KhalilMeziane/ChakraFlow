@@ -7,12 +7,11 @@ import {
 	Container,
 	Grid,
 	Heading,
-	useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function Elements() {
 	return (
-		<Box as="section" py="8" bg={useColorModeValue("white", "#0a0a0a")}>
+		<Box as="section" py="8" >
 			<Container maxW="7xl">
 				<Heading
 					as="h2"
