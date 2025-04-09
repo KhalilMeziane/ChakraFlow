@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Host: https://chakra-flow.vercel.app
+
+Sitemap: https://chakra-flow.vercel.app/sitemap.xml
