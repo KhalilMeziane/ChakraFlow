@@ -62,7 +62,7 @@ export default function NewPreview({
 			rounded="md"
 			mb="10"
 		>
-			<Tabs variant="enclosed" isLazy={true} defaultIndex={1}>
+			<Tabs variant="enclosed" isLazy={true} defaultIndex={0}>
 				<PreviewHeader
 					title={title}
 					activePreset={activePreset}
