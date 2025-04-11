@@ -49,7 +49,6 @@ export function SyntaxHighlighter({
 						overflowY="auto"
 						fontSize="sm"
 						bg={bgColor}
-						borderRadius="md"
 						className={className}
 						style={style}
 						h="70vh"

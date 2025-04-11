@@ -1,6 +1,6 @@
 "use client";
 
-import BlockCard from "@/components/BlockCard";
+import NewPreview from "@/components/newPreview/Preview";
 import {
 	ContainerDoubleStack,
 	ContainerDoubleStackString,
@@ -21,46 +21,40 @@ export default function Blocks() {
 	return (
 		<Box as="section" py="5" bg={useColorModeValue("white", "#0a0a0a")}>
 			<Container maxW="7xl">
-				<BlockCard
+				<NewPreview
 					Component={<ToggleAsideBar />}
 					code={ToggleAsideBarString}
 					title="Toggle Aside Bar"
-					hash="#toggle-aside-bar"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<NavSidebar />}
 					code={NavSidebarString}
 					title="Nav Side Bar"
-					hash="#nav-side-bar-String"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<DrawerNavigation />}
 					code={DrawerNavigationString}
 					title="Drawer Navigation"
-					hash="#drawer-navigation"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<ContainerDoubleStack />}
 					code={ContainerDoubleStackString}
 					title="Container Double Stack"
-					hash="#container-double-stack"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<FullWidthDoubleStack />}
 					code={FullWidthDoubleStackString}
 					title="Full Width Double Stack"
-					hash="#full-width-double-stack"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<ToggleDrawerNavigation />}
 					code={ToggleDrawerNavigationString}
 					title="Toggle Drawer Navigation"
-					hash="#toggle-drawer-navigation"
 				/>
 			</Container>
 		</Box>
