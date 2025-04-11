@@ -1,6 +1,6 @@
 "use client";
 
-import BlockCard from "@/components/BlockCard";
+import NewPreview from "@/components/newPreview/Preview";
 import {
 	Column,
 	ColumnString,
@@ -21,47 +21,41 @@ export default function Blocks() {
 	return (
 		<Box as="section" py="5" bg={useColorModeValue("white", "#0a0a0a")}>
 			<Container maxW="7xl">
-				<BlockCard
+				<NewPreview
 					Component={<Simple />}
 					code={SimpleString}
 					title="Simple Auth Form"
-					hash="#simple-auth-form"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<Column />}
 					code={ColumnString}
 					title="Column Auth Form"
-					hash="#column-auth-form"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<Cover />}
 					code={CoverString}
 					title="Cover Auth Form"
-					hash="#cover-auth-form"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<Plain />}
 					code={PlainString}
 					title="Plain Auth Form"
-					hash="#plain-auth-form"
 				/>
 
-				<BlockCard
+				<NewPreview
 					Component={<Sidebar />}
 					code={SidebarString}
 					title="sidebar Auth Form"
-					hash="#sidebar-auth-form"
 				/>
 
-				<BlockCard
+				<NewPreview
 					// eslint-disable-next-line jsx-a11y/alt-text
 					Component={<Image />}
 					code={ImageString}
 					title="Image Auth Form"
-					hash="#image-auth-form"
 				/>
 
 			</Container>

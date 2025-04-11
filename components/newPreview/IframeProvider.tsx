@@ -9,14 +9,16 @@ import {
 } from "@chakra-ui/react";
 import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
+import { useId } from "react";
 import Iframe, { FrameContextConsumer } from "react-frame-component";
 
 export const IframeProvider = (
 	props: React.PropsWithChildren & { colorMode: "light" | "dark" }
 ) => {
 	const { children, colorMode = "light" } = props;
+
 	return (
-		<Iframe width="100%" height="100%">
+		<Iframe width="100%" height="100%" loading="lazy" key={useId()}>
 			<FrameContextConsumer>
 				{(frame) => {
 					const head = frame.document?.head;
@@ -37,7 +39,9 @@ export const IframeProvider = (
 									value={colorMode}
 									options={{ useSystemColorMode: false }}
 								>
-									<ChakraProvider theme={iframeTheme}>{children}</ChakraProvider>
+									<ChakraProvider theme={iframeTheme}>
+										{children}
+									</ChakraProvider>
 								</ColorModeProvider>
 							</EnvironmentProvider>
 						</CacheProvider>
