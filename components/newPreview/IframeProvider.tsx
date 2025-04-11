@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 "use client";
 
 import { theme as baseTheme } from "@/app/theme";
@@ -18,7 +19,29 @@ export const IframeProvider = (
 	const { children, colorMode = "light" } = props;
 
 	return (
-		<Iframe width="100%" height="100%" loading="lazy" key={useId()}>
+		<Iframe
+			width="100%"
+			height="100%"
+			loading="lazy"
+			key={useId()}
+			head={
+				<>
+					<link
+						href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+						rel="stylesheet"
+					/>
+					<style>
+						{`
+						body {
+							font-family: 'Poppins', sans-serif !important;
+							margin: 0;
+							padding: 0;
+						}
+					`}
+					</style>
+				</>
+			}
+		>
 			<FrameContextConsumer>
 				{(frame) => {
 					const head = frame.document?.head;
