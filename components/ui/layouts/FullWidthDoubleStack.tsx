@@ -1,3 +1,5 @@
+"use client"
+
 import {
 	Box,
 	Breadcrumb,
@@ -25,6 +27,8 @@ export default function FullWidthDoubleStack() {
 				p="3"
 				borderBottom="1px"
 				borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<Heading as="h1" size="md">
 					Brand
@@ -52,6 +56,8 @@ export default function FullWidthDoubleStack() {
 				p="3"
 				borderBottom="1px"
 				borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<HStack alignItems="center">
 					<Heading as="h2" size="md">
@@ -88,7 +94,8 @@ export default function FullWidthDoubleStack() {
 				minH="78vh"
 				align="center"
 				justify="center"
-				bg={useColorModeValue("gray.50", "gray.900")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<Box textAlign="center">
 					<Heading as="h3">Box Heading</Heading>
@@ -99,7 +106,9 @@ export default function FullWidthDoubleStack() {
 	);
 }
 
-export const FullWidthDoubleStackString = `import {
+export const FullWidthDoubleStackString = `"use client"
+
+import {
   Box,
   Breadcrumb,
   BreadcrumbItem,
@@ -126,6 +135,8 @@ export default function FullWidthDoubleStack() {
         p="3"
         borderBottom="1px"
         borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <Heading as="h1" size="md">
           Brand
@@ -153,6 +164,8 @@ export default function FullWidthDoubleStack() {
         p="3"
         borderBottom="1px"
         borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <HStack alignItems="center">
           <Heading as="h2" size="md">
@@ -189,7 +202,8 @@ export default function FullWidthDoubleStack() {
         minH="78vh"
         align="center"
         justify="center"
-        bg={useColorModeValue("gray.50", "gray.900")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <Box textAlign="center">
           <Heading as="h3">Box Heading</Heading>

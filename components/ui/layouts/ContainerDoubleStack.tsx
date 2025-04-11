@@ -1,3 +1,5 @@
+"use client"
+
 import {
 	Box,
 	Breadcrumb,
@@ -24,6 +26,8 @@ export default function ContainerDoubleStack() {
 				p="3"
 				borderBottom="1px"
 				borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<Flex
 					as={Container}
@@ -57,6 +61,8 @@ export default function ContainerDoubleStack() {
 				p="3"
 				borderBottom="1px"
 				borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<Flex
 					as={Container}
@@ -96,7 +102,8 @@ export default function ContainerDoubleStack() {
 				minH="78vh"
 				align="center"
 				justify="center"
-				bg={useColorModeValue("gray.50", "gray.900")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<Box textAlign="center">
 					<Heading as="h3">Box Heading</Heading>
@@ -107,7 +114,9 @@ export default function ContainerDoubleStack() {
 	);
 }
 
-export const ContainerDoubleStackString = `import {
+export const ContainerDoubleStackString = `"use client"
+
+import {
   Box,
   Breadcrumb,
   BreadcrumbItem,
@@ -133,6 +142,8 @@ export default function ContainerDoubleStack() {
         p="3"
         borderBottom="1px"
         borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <Flex
           as={Container}
@@ -166,6 +177,8 @@ export default function ContainerDoubleStack() {
         p="3"
         borderBottom="1px"
         borderColor={useColorModeValue("gray.200", "gray.600")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <Flex
           as={Container}
@@ -205,7 +218,8 @@ export default function ContainerDoubleStack() {
         minH="78vh"
         align="center"
         justify="center"
-        bg={useColorModeValue("gray.50", "gray.900")}
+        bg={useColorModeValue("white", "gray.900")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <Box textAlign="center">
           <Heading as="h3">Box Heading</Heading>

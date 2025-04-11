@@ -1,3 +1,5 @@
+"use client"
+
 import {
 	Box,
 	Drawer,
@@ -66,6 +68,8 @@ export default function ToggleDrawerNavigation() {
 				h="16"
 				py="2.5"
 				pr="2.5"
+        bg={useColorModeValue("white", "gray.800")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<HStack spacing={2}>
 					<IconButton
@@ -115,7 +119,8 @@ export default function ToggleDrawerNavigation() {
 					minH="90vh"
 					align="center"
 					justify="center"
-					bg={useColorModeValue("gray.50", "gray.900")}
+          bg={useColorModeValue("white", "gray.900")}
+          color={useColorModeValue("gray.900", "gray.50")}
 				>
 					<Box textAlign="center">
 						<Heading as="h3">Main Heading</Heading>
@@ -132,6 +137,8 @@ const Aside = ({ onClose }: { onClose: () => void }) => {
 		<Box
 			borderRight="2px"
 			borderColor={useColorModeValue("gray.200", "gray.900")}
+      bg={useColorModeValue("white", "gray.900")}
+      color={useColorModeValue("gray.900", "gray.50")}
 		>
 			<HStack p="2.5" justify="space-between">
 				<Heading as="h1" size="md">
@@ -177,7 +184,9 @@ const ListElement = ({ icon, text }: ListItem) => {
 	);
 };
 
-export const ToggleDrawerNavigationString = `import {
+export const ToggleDrawerNavigationString = `"use client"
+
+import {
   Box,
   Drawer,
   DrawerContent,
@@ -245,6 +254,8 @@ export default function ToggleDrawerNavigation() {
         h="16"
         py="2.5"
         pr="2.5"
+        bg={useColorModeValue("white", "gray.800")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <HStack spacing={2}>
           <IconButton
@@ -294,7 +305,8 @@ export default function ToggleDrawerNavigation() {
           minH="90vh"
           align="center"
           justify="center"
-          bg={useColorModeValue("gray.50", "gray.900")}
+          bg={useColorModeValue("white", "gray.900")}
+          color={useColorModeValue("gray.900", "gray.50")}
         >
           <Box textAlign="center">
             <Heading as="h3">Main Heading</Heading>
@@ -311,6 +323,8 @@ const Aside = ({ onClose }: { onClose: () => void }) => {
     <Box
       borderRight="2px"
       borderColor={useColorModeValue("gray.200", "gray.900")}
+      bg={useColorModeValue("white", "gray.900")}
+      color={useColorModeValue("gray.900", "gray.50")}
     >
       <HStack p="2.5" justify="space-between">
         <Heading as="h1" size="md">

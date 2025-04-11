@@ -20,7 +20,14 @@ import {
 	ModalCloseButton,
 	useDisclosure,
 } from "@chakra-ui/react";
-import { Blocks, Maximize, Monitor, Smartphone, Tablet } from "lucide-react";
+import {
+	Blocks,
+	Maximize,
+	Monitor,
+	PanelBottomClose,
+	Smartphone,
+	Tablet,
+} from "lucide-react";
 import { ReactNode, useState } from "react";
 import { IframeProvider } from "./IframeProvider";
 import { SyntaxHighlighter } from "./SyntaxHighlighter";
@@ -69,7 +76,7 @@ export default function NewPreview({
 					setDevicePreset={setDevicePreset}
 					Component={Component}
 				/>
-				<TabPanels bg={useColorModeValue("white", "")}>
+				<TabPanels bg={useColorModeValue("white", "#151b23")}>
 					<TabPanel
 						style={{
 							width: `${width}px`,
@@ -243,10 +250,23 @@ const FullPreviewModal = ({ Component }: { Component: ReactNode }) => {
 				isOpen={isOpen}
 				scrollBehavior="inside"
 				isCentered
+				motionPreset='slideInBottom'
 			>
 				<ModalOverlay />
-				<ModalContent>
-					<ModalCloseButton />
+				<ModalContent position="relative">
+					<ModalCloseButton
+						bg={useColorModeValue("#22272b", 'white')}
+						color={useColorModeValue("white", '#22272b')}
+						zIndex={99}
+						position="absolute"
+						top="none"
+						right="25px"
+						bottom="25px"
+						rounded="md"
+						size="lg"
+					>
+						<PanelBottomClose size="18" />
+					</ModalCloseButton>
 					<ModalBody p="0">{Component}</ModalBody>
 				</ModalContent>
 			</Modal>

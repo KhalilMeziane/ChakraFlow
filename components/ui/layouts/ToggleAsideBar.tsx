@@ -1,3 +1,5 @@
+"use client"
+
 import {
 	Box,
 	Flex,
@@ -63,6 +65,8 @@ export default function ToggleAsideBar() {
 					borderRight="2px"
 					borderColor={useColorModeValue("gray.200", "gray.900")}
 					transition="width 0.25s ease"
+          bg={useColorModeValue("gray.50", "gray.800")}
+          color={useColorModeValue("gray.900", "gray.50")}
 				>
 					<HStack h="14" justify="space-between">
 						{isOpen && <Text p="2.5">Brand</Text>}
@@ -93,7 +97,8 @@ export default function ToggleAsideBar() {
 					minH="100vh"
 					align="center"
 					justify="center"
-					bg={useColorModeValue("gray.50", "gray.900")}
+          bg={useColorModeValue("white", "gray.900")}
+          color={useColorModeValue("gray.900", "gray.50")}
 				>
 					<Box textAlign="center">
 						<Heading as="h3">Main Heading</Heading>
@@ -122,7 +127,9 @@ const ListElement = ({ icon, text }: ListItem) => {
 	);
 };
 
-export const ToggleAsideBarString = `import {
+export const ToggleAsideBarString = `"use client"
+
+import {
   Box,
   Flex,
   HStack,
@@ -187,6 +194,8 @@ export default function ToggleAsideBar() {
           borderRight="2px"
           borderColor={useColorModeValue("gray.200", "gray.900")}
           transition="width 0.25s ease"
+          bg={useColorModeValue("gray.50", "gray.800")}
+          color={useColorModeValue("gray.900", "gray.50")}
         >
           <HStack h="14" justify="space-between">
             {isOpen && <Text p="2.5">Brand</Text>}
@@ -217,7 +226,8 @@ export default function ToggleAsideBar() {
           minH="100vh"
           align="center"
           justify="center"
-          bg={useColorModeValue("gray.50", "gray.900")}
+          bg={useColorModeValue("white", "gray.900")}
+          color={useColorModeValue("gray.900", "gray.50")}
         >
           <Box textAlign="center">
             <Heading as="h3">Main Heading</Heading>

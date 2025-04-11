@@ -1,3 +1,5 @@
+"use client"
+
 import {
 	Box,
 	Drawer,
@@ -72,6 +74,8 @@ export default function DrawerNavigation() {
 				justifyContent={{ base: "space-between", lg: "flex-end" }}
 				h="10vh"
 				p="2.5"
+        bg={useColorModeValue("gray.50", "gray.800")}
+        color={useColorModeValue("gray.900", "gray.50")}
 			>
 				<HStack spacing={2} display={{ base: "flex", lg: "none" }}>
 					<IconButton
@@ -101,7 +105,8 @@ export default function DrawerNavigation() {
 					/>
 				</HStack>
 			</Flex>
-			<HStack align="start" spacing={0}>
+			<HStack align="start" spacing={0} bg={useColorModeValue("gray.50", "gray.800")}
+        color={useColorModeValue("gray.900", "gray.50")}>
 				<Aside
 					onClose={onClose}
 					display={{ base: "none", lg: "block" }}
@@ -126,7 +131,8 @@ export default function DrawerNavigation() {
 					minH="90vh"
 					align="center"
 					justify="center"
-					bg={useColorModeValue("gray.50", "gray.900")}
+          bg={useColorModeValue("white", "gray.900")}
+          color={useColorModeValue("gray.900", "gray.50")}
 				>
 					<Box textAlign="center">
 						<Heading as="h3">Main Heading</Heading>
@@ -160,6 +166,8 @@ const Aside = ({ onClose, isOpen, ...rest }: AsideProps) => {
 			minH="100vh"
 			zIndex={99}
 			{...rest}
+      bg={useColorModeValue("white", "gray.900")}
+      color={useColorModeValue("gray.900", "gray.50")}
 		>
 			<HStack p="2.5" h="10vh" justify="space-between">
 				<Heading as="h1" size="md">
@@ -206,7 +214,9 @@ const ListElement = ({ icon, text }: ListItem) => {
 	);
 };
 
-export const DrawerNavigationString =`import {
+export const DrawerNavigationString =`"use client"
+
+import {
   Box,
   Drawer,
   DrawerContent,
@@ -280,6 +290,8 @@ export default function DrawerNavigation() {
         justifyContent={{ base: "space-between", lg: "flex-end" }}
         h="10vh"
         p="2.5"
+        bg={useColorModeValue("gray.50", "gray.800")}
+        color={useColorModeValue("gray.900", "gray.50")}
       >
         <HStack spacing={2} display={{ base: "flex", lg: "none" }}>
           <IconButton
@@ -309,7 +321,8 @@ export default function DrawerNavigation() {
           />
         </HStack>
       </Flex>
-      <HStack align="start" spacing={0}>
+      <HStack align="start" spacing={0} bg={useColorModeValue("gray.50", "gray.800")}
+        color={useColorModeValue("gray.900", "gray.50")}>
         <Aside
           onClose={onClose}
           display={{ base: "none", lg: "block" }}
@@ -334,7 +347,8 @@ export default function DrawerNavigation() {
           minH="90vh"
           align="center"
           justify="center"
-          bg={useColorModeValue("gray.50", "gray.900")}
+          bg={useColorModeValue("white", "gray.900")}
+          color={useColorModeValue("gray.900", "gray.50")}
         >
           <Box textAlign="center">
             <Heading as="h3">Main Heading</Heading>
@@ -367,6 +381,8 @@ const Aside = ({ onClose, isOpen, ...rest }: AsideProps) => {
       h="100%"
       minH="100vh"
       zIndex={99}
+      bg={useColorModeValue("white", "gray.900")}
+      color={useColorModeValue("gray.900", "gray.50")}
       {...rest}
     >
       <HStack p="2.5" h="10vh" justify="space-between">
