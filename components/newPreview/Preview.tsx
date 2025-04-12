@@ -1,5 +1,6 @@
 "use client";
 
+import { ReactNode, useState } from "react";
 import {
 	Box,
 	Divider,
@@ -27,8 +28,10 @@ import {
 	PanelBottomClose,
 	Smartphone,
 	Tablet,
+	GripVertical,
 } from "lucide-react";
-import { ReactNode, useState } from "react";
+import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
+
 import { IframeProvider } from "./IframeProvider";
 import { SyntaxHighlighter } from "./SyntaxHighlighter";
 
@@ -37,6 +40,12 @@ const devicePresets = {
 	mobile: 375,
 	tablet: 768,
 	desktop: 1280,
+};
+
+const presetWidths = {
+	mobile: 100,
+	tablet: 50,
+	desktop: 35,
 };
 
 interface IPreviewProps {
@@ -76,7 +85,7 @@ export default function NewPreview({
 					setDevicePreset={setDevicePreset}
 					Component={Component}
 				/>
-				<TabPanels bg={useColorModeValue("white", "#151b23")}>
+				<TabPanels bg={useColorModeValue("white", "#0a0a0a")}>
 					<TabPanel
 						style={{
 							width: `${width}px`,
@@ -86,9 +95,45 @@ export default function NewPreview({
 						maxH="80vh"
 						p="0"
 					>
-						<IframeProvider colorMode={colorMode}>
-							{Component}
-						</IframeProvider>
+						<PanelGroup direction="horizontal">
+							<Panel
+								defaultSize={100}
+								minSize={presetWidths[activePreset] ?? 35}
+								maxSize={100}
+							>
+								<IframeProvider colorMode={colorMode}>
+									{Component}
+								</IframeProvider>
+							</Panel>
+							<PanelResizeHandle>
+								<Box
+									bg={useColorModeValue("#e5e5e5", "#232323")}
+									width="1px"
+									h="full"
+									display="flex"
+									alignItems="center"
+									justifyContent="center"
+								>
+									<Box
+										display="flex"
+										flexDir="column"
+										alignItems="center"
+										justifyContent="center"
+										cursor="col-resize"
+										bg={useColorModeValue(
+											"#e5e5e5",
+											"#575757;"
+										)}
+										rounded="md"
+										h="8"
+										w="2.5"
+									>
+										<GripVertical size="14" />
+									</Box>
+								</Box>
+							</PanelResizeHandle>
+							<Panel collapsible={true}></Panel>
+						</PanelGroup>
 					</TabPanel>
 					<TabPanel p="0" h="80vh" maxH="80vh">
 						<SyntaxHighlighter
@@ -250,13 +295,13 @@ const FullPreviewModal = ({ Component }: { Component: ReactNode }) => {
 				isOpen={isOpen}
 				scrollBehavior="inside"
 				isCentered
-				motionPreset='slideInBottom'
+				motionPreset="slideInBottom"
 			>
 				<ModalOverlay />
 				<ModalContent position="relative">
 					<ModalCloseButton
-						bg={useColorModeValue("#22272b", 'white')}
-						color={useColorModeValue("white", '#22272b')}
+						bg={useColorModeValue("#22272b", "white")}
+						color={useColorModeValue("white", "#22272b")}
 						zIndex={99}
 						position="absolute"
 						top="none"
