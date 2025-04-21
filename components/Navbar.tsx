@@ -7,9 +7,11 @@ import {
 	Stack,
 	Container,
 	useColorModeValue,
+	IconButton,
 } from "@chakra-ui/react";
 import ThemeToggle from "./ThemeToggle";
 import Link from "next/link";
+import { Github } from "lucide-react";
 
 export default function Navbar() {
 	return (
@@ -46,9 +48,28 @@ export default function Navbar() {
 						flex={{ base: 1, md: 0 }}
 						justify={"flex-end"}
 						direction={"row"}
-						spacing={6}
+						spacing={1}
 					>
 						<ThemeToggle />
+						<IconButton
+							as={Link}
+							alignSelf={"center"}
+							size={"sm"}
+							backgroundColor={useColorModeValue(
+								"white",
+								"gray.700"
+							)}
+							border={"1px"}
+							borderColor={useColorModeValue(
+								"gray.200",
+								"gray.700"
+							)}
+							variant={"ghost"}
+							aria-label={"Toggle Color Mode"}
+							icon={<Github size="20" />}
+							href="https://github.com/KhalilMeziane/ChakraFlow"
+							target="_blank"
+						/>
 					</Stack>
 				</Flex>
 			</Container>

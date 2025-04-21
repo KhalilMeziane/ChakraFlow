@@ -7,28 +7,15 @@ import {
 	Text,
 	useColorModeValue,
 } from "@chakra-ui/react";
-import { Github, Linkedin, Twitter } from "lucide-react";
-import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<Box as="footer" bg={useColorModeValue("#fafafa", "#171717")} py="6">
+		<Box as="footer" py="6" bg={useColorModeValue("white", "#0a0a0a")}>
 			<Container maxW="7xl">
-				<HStack justify="space-between">
+				<HStack justify="center">
 					<Text textAlign="center" fontSize="sm">
 						©2025 ChakraFlow, All rights reserved.
 					</Text>
-					<HStack>
-						<Link href="https://www.linkedin.com/in/khalil-meziane/" target="_blank" aria-label="linkedin account">
-							<Linkedin size="20" />
-						</Link>
-						<Link href="https://x.com/khalil_meziane" target="_blank" aria-label="twitter or x account">
-							<Twitter size="20" />
-						</Link>
-						<Link href="https://github.com/KhalilMeziane" target="_blank" aria-label="github account">
-							<Github size="20" />
-						</Link>
-					</HStack>
 				</HStack>
 			</Container>
 		</Box>
