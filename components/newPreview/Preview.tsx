@@ -166,7 +166,7 @@ const PreviewHeader = ({
 			borderColor={useColorModeValue("#eaeaec", "gray.800")}
 			p="3"
 		>
-			<HStack justify="space-between">
+			<HStack justify="space-between" flexWrap="wrap" gap="3">
 				{/* title */}
 				<Heading as="h3" fontSize="base" fontWeight="medium">
 					<HStack gap="1">
