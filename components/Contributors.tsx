@@ -32,6 +32,12 @@ const contributors: Contributor[] = [
 		avatar: "https://avatars.githubusercontent.com/u/105116768?v=4",
 		profileUrl: "https://github.com/Aladinta68",
 	},
+	{
+		username: "gost1930",
+		name: " Hadbi Mohamed ",
+		avatar: "https://avatars.githubusercontent.com/u/86519970?v=4",
+		profileUrl: "https://github.com/gost1930",
+	},
 ];
 
 export default function Contributors() {
